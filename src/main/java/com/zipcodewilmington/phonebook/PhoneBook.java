@@ -96,10 +96,11 @@ public class PhoneBook {
     public String lookUp(String name) {
 
 
-        String phonelook = phonebook.get(name).toString();
+        ArrayList phonelook = phonebook.get(name);
+        String main = phonelook.toString().join(" ",phonelook);
 
 
-        return phonelook;
+        return main;
     }
 
 

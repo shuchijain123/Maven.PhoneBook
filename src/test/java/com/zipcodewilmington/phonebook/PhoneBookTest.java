@@ -160,7 +160,8 @@ public class PhoneBookTest {
         //When
         ph1.add(name,phoo);
 
-       ph1.lookUp(name);
+       String actual = ph1.lookUp(name);
+        Assert.assertEquals(phoo, actual);
     }
 
     @Test
